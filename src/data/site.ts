@@ -5,7 +5,14 @@ export const navLinks = [
   { label: "Contact", href: "#contact", icon: "contact" },
 ];
 
-export const heroBadges = [
+export const heroPillPhrases = [
+  "Apps + SaaS",
+  "Web Platforms",
+  "Mobile Apps",
+  "AI Products",
+];
+
+export const heroPlatformIcons = [
   {
     label: "Top Rated Plus",
     href: "https://www.upwork.com",
@@ -20,18 +27,35 @@ export const heroBadges = [
   },
   {
     label: "Leading Design Agency",
+    href: "https://clutch.co/profile/endpoint-clients",
+    image: "/assets/clutch.svg",
+    alt: "Clutch",
+  },
+  {
+    label: "Leading Design Agency",
     href: "https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency",
     image: "/assets/techbehemoths.svg",
-    alt: "techbehemoths",
+    alt: "TechBehemoths",
   },
 ];
 
-export const heroMarqueeWords = [
-  "Innovation",
-  "Excellence",
-  "Performance",
-  "Design",
-  "Growth",
+export const partnerBrands = [
+  { src: "/images/brands/homesharea.png", alt: "Homesharea" },
+  { src: "/images/brands/bondheshams.png", alt: "Bondh e Shams" },
+  { src: "/images/brands/duoworld.png", alt: "DuoWorld" },
+  { src: "/images/brands/curryking.png", alt: "Curry King" },
+  { src: "/images/brands/bajcogroup.png", alt: "Bajco Group" },
+  { src: "/images/brands/capitalcareinvestment.png", alt: "Capital Care" },
+  { src: "/images/brands/citrusbits.png", alt: "CitrusBits" },
+  { src: "/images/brands/darerc.png", alt: "Darerc" },
+  { src: "/images/brands/frewert-media.png", alt: "Frewert Media" },
+  { src: "/images/brands/hyversa.png", alt: "Hyversa" },
+  { src: "/images/brands/japan-statioan.png", alt: "Japan Station" },
+  { src: "/images/brands/lmconsulting.png", alt: "LM Consulting" },
+  { src: "/images/brands/mahaana.png", alt: "Mahaana" },
+  { src: "/images/brands/misa.png", alt: "Misa" },
+  { src: "/images/brands/pasha.png", alt: "Pasha" },
+  { src: "/images/brands/azm.png", alt: "AZM" },
 ];
 
 export const industries = [
