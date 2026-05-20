@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { MobileNav } from "@/components/layout/MobileNav";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollToTop } from "@/components/layout/ScrollToTop";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,11 +39,12 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${manrope.variable} ${playfair.variable} h-full`}
     >
-      <body className="min-h-full pb-20 antialiased lg:pb-0">
+      <body className="min-h-full antialiased">
         <Header />
         {children}
         <Footer />
         <MobileNav />
+        <ScrollToTop />
       </body>
     </html>
   );

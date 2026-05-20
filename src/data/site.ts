@@ -272,3 +272,93 @@ export const formBudgets = ["$1k - $5k", "$5k - $10k", "$10k - $25k", "$25k+"];
 
 export const VIDEO_URL =
   "https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1776674123/Endpoint_Video_Compressed_jfvvui.mp4";
+
+export const footerQuickLinks = [
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "About Us", href: "#about" },
+  { label: "Contact Us", href: "#contact" },
+];
+
+export const footerServiceLinks = [
+  { label: "UI/UX Design", href: "#services" },
+  { label: "Web & Mobile App", href: "#services" },
+  { label: "Dashboard", href: "#services" },
+  { label: "Ai & ML Development", href: "#services" },
+  { label: "Branding", href: "#services" },
+];
+
+export const footerReviewLinks = [
+  {
+    label: "Clutch",
+    href: "https://clutch.co/profile/endpoint-clients",
+  },
+  {
+    label: "Techbehmoths",
+    href: "https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency",
+  },
+  {
+    label: "Techreviewer",
+    href: "https://techreviewer.co/companies/endpoint-clients-ltd",
+  },
+  { label: "Designrush", href: "https://www.designrush.com/" },
+  {
+    label: "Goodfirms",
+    href: "https://www.goodfirms.co/company/endpoint-clients-ltd",
+  },
+  {
+    label: "Trustpilot",
+    href: "https://www.trustpilot.com/review/endpointclients.com",
+  },
+];
+
+export const footerOffices = [
+  {
+    country: "Pakistan",
+    address: "New City Phase 2, Block F, Street 6B, Wah Cantt, Pakistan",
+    phone: "+92 333 5586757",
+    whatsapp: "https://wa.me/923335586757",
+    flag: "pk",
+  },
+  {
+    country: "Bahrain",
+    address:
+      "Flat No. 11, Building 1694, Road 968, Block 909, East Riffa, Southern Governorate, Bahrain",
+    phone: "+973 3557 9427",
+    whatsapp: null,
+    flag: "bh",
+  },
+  {
+    country: "United Kingdom",
+    address:
+      "71-75 Shelton Street, Covent Garden London WC2H 9JQ United Kingdom",
+    phone: "+44 7598 981921",
+    whatsapp: "https://wa.me/447598981921",
+    flag: "uk",
+  },
+];
+
+export const footerSocialLinks = [
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/endpointclients",
+    icon: "facebook",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/endpointclients/",
+    icon: "instagram",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/endpoint-clients/",
+    icon: "linkedin",
+  },
+];
+
+export const desktopNavLinks = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Contact", href: "#contact" },
+];
