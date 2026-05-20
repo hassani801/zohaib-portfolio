@@ -1,5 +1,5 @@
 import { valueProps } from "@/data/site";
-import { CTAButton } from "@/components/ui/CTAButton";
+import { StartProjectButton } from "@/components/ui/StartProjectButton";
 import { CheckStarIcon } from "@/components/ui/icons";
 
 export function ValueSection() {
@@ -19,7 +19,7 @@ export function ValueSection() {
               that feel natural, reduce friction, and guide users effortlessly
               from first interaction to conversion.
             </p>
-            <CTAButton />
+            <StartProjectButton />
           </div>
 
           <div className="flex flex-col gap-3 lg:gap-4">

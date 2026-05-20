@@ -180,12 +180,41 @@ export const services = [
 ];
 
 export const stats = [
-  { value: 350, suffix: "+", label: "Happy Clients Worldwide" },
-  { value: 120, suffix: "M+", label: "Raised by our Clients", prefix: "$" },
-  { value: 45, suffix: "+", label: "Countries Served" },
-  { value: 500, suffix: "+", label: "Top Rated Projects on Upwork & Fiverr" },
-  { value: 98, suffix: "%", label: "Job Success" },
+  {
+    value: 350,
+    suffix: "+",
+    label: "Happy Clients Worldwide",
+    icon: "/assets/stats/stat-clients.png",
+  },
+  {
+    value: 120,
+    suffix: "M+",
+    label: "Raised by our Clients",
+    prefix: "$",
+    icon: "/assets/stats/stat-raised.png",
+  },
+  {
+    value: 45,
+    suffix: "+",
+    label: "Countries Served",
+    icon: "/assets/stats/stat-countries.png",
+  },
+  {
+    value: 500,
+    suffix: "+",
+    label: "Top Rated Projects on Upwork & Fiverr",
+    icon: "/assets/stats/stat-projects.png",
+  },
+  {
+    value: 98,
+    suffix: "%",
+    label: "Job Success",
+    icon: "/assets/stats/stat-success.png",
+  },
 ];
+
+export const CONTACT_VIDEO_URL =
+  "https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1776247016/BG_21_ec7n75.mp4";
 
 export const testimonials = [
   {
