@@ -31,13 +31,14 @@ export function Contact() {
           <div className="relative mx-auto grid w-full max-w-8xl grid-cols-1 gap-10 px-4 py-8 md:grid-cols-2 md:px-12 md:py-18 lg:gap-10 lg:py-0 lg:pl-12 lg:pr-10">
             <div className="flex h-full flex-col justify-between gap-10">
               <div className="flex flex-col gap-4">
-                <h2 className="text-4xl font-semibold leading-[112%] text-white lg:text-[50px]">
-                  Let&apos;s{" "}
-                  <span className="font-playfair inline-block italic transition-all duration-300 ease-out hover:-translate-x-1">
-                    Design Products
+                <h2 className="flex flex-col gap-3 text-4xl font-semibold leading-[112%] text-white lg:gap-4 lg:text-[50px]">
+                  <span>
+                    Let&apos;s{" "}
+                    <span className="font-playfair inline-block italic transition-all duration-300 ease-out hover:-translate-x-1">
+                      Design Products
+                    </span>
                   </span>
-                  <br />
-                  user remembers.
+                  <span>user remembers.</span>
                 </h2>
                 <p className="text-lg leading-normal text-white lg:text-xl">
                   Tell us about your idea. We&apos;ll start with a call to understand
