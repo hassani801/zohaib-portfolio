@@ -44,22 +44,6 @@ export function Header() {
           />
         </Link>
 
-        <nav className="flex items-center gap-8">
-          {desktopLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`text-sm font-medium transition-colors ${
-                onHero
-                  ? "text-white/90 hover:text-white"
-                  : "text-gray-700 hover:text-brand"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-
         <div className="relative flex items-center gap-4">
           <div className="relative">
             <Link
@@ -75,7 +59,7 @@ export function Header() {
               />
             </Link>
           </div>
-          <CTAButton />
+
         </div>
       </div>
     </header>
