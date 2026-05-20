@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #4939d2;
+  --cream: #faf7f6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-gray-950 antialiased font-manrope;
+}
+
+::selection {
+  background: rgba(73, 57, 210, 0.2);
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+
+  .playfair-underline {
+    @apply font-playfair relative inline-block transition-all duration-300 ease-out;
+  }
+
+  .playfair-underline::after {
+    content: "";
+    @apply absolute left-0 -bottom-2 h-0.5 w-full origin-left scale-x-0 bg-brand transition-transform duration-300 ease-out;
+  }
+
+  .playfair-underline:hover::after,
+  .group:hover .playfair-underline::after {
+    @apply scale-x-100;
+  }
+
+  .group:hover .playfair-underline {
+    @apply text-brand;
+  }
+}
+
+/* CRT slot-machine text */
+.crt-wrap {
+  display: inline-flex;
+  gap: 0.02em;
+}
+
+.crt-cell {
+  display: inline-block;
+  height: 1.2em;
+  overflow: hidden;
+  line-height: 1.2em;
+}
+
+.crt-stack {
+  display: flex;
+  flex-direction: column;
+  animation: crtTick 4s ease-in-out infinite;
+  animation-delay: calc(var(--i, 0) * 0.08s);
+}
+
+.crt-glyph {
+  flex-shrink: 0;
+  height: 1.2em;
+}
+
+@keyframes crtTick {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  50%,
+  90% {
+    transform: translateY(-100%);
+  }
+}
