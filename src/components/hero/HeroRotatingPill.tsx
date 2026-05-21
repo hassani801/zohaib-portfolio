@@ -11,7 +11,7 @@ export function HeroRotatingPill() {
         {items.map((word, i) => (
           <span
             key={`${word}-${i}`}
-            className="mx-5 font-playfair text-lg font-bold text-white lg:text-3xl"
+            className="mx-5 font-playfair text-lg font-bold text-white lg:text-4xl"
           >
             {word}
           </span>
