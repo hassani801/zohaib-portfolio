@@ -6,10 +6,15 @@ export const navLinks = [
 ];
 
 export const heroPillPhrases = [
-  "Apps + SaaS",
-  "Web Platforms",
-  "Mobile Apps",
-  "AI Products",
+  "Graphics Design",
+  "Logo Design",
+  "Branding",
+  "E-commerce Design",
+  "UI/UX Design",
+  "Web Design",
+  "Web Development",
+  "App Development",
+  "SEO",
 ];
 
 export const heroPlatformIcons = [
