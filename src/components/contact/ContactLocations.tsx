@@ -72,7 +72,7 @@ export function ContactLocations() {
         className="absolute -left-1/12 hidden w-auto animate-slowRotate lg:inline-block"
       />
 
-      <div className="container mx-auto grid max-w-7xl grid-cols-1 gap-2 md:grid-cols-3 md:gap-10">
+      <div className="container mx-auto grid max-w-7xl grid-cols-1 gap-2 md:grid-cols-2 md:gap-10">
         <div className="flex flex-col items-start gap-5 pb-8 md:pb-12">
           <SectionBadge label="Location" />
           <p className="text-[32px] font-semibold leading-[120%] text-gray-950 md:text-[48px]">

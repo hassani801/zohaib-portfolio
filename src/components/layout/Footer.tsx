@@ -33,8 +33,7 @@ function LocationPinIcon() {
 }
 
 function OfficeFlag({ flag }: { flag: string }) {
-  const emoji =
-    flag === "pk" ? "🇵🇰" : flag === "bh" ? "🇧🇭" : "🇬🇧";
+  const emoji = flag === "pk" ? "🇵🇰" : "🇬🇧";
   return (
     <span className="flex h-7 w-7 shrink-0 items-center justify-center text-2xl leading-none">
       {emoji}
@@ -192,7 +191,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
           {footerOffices.map((office) => (
             <div
               key={office.country}

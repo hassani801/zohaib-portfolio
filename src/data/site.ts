@@ -304,25 +304,17 @@ export const footerReviewLinks = [
 export const footerOffices = [
   {
     country: "Pakistan",
-    address: "New City Phase 2, Block F, Street 6B, Wah Cantt, Pakistan",
-    phone: "+92 333 5586757",
-    whatsapp: "https://wa.me/923335586757",
+    address:
+      "Innovista Rawal, Defense Avenue, A, Sector A DHA Phase 1, Islamabad, 45730, Pakistan",
+    phone: "+92 316 1543205",
+    whatsapp: "https://wa.me/923161543205",
     flag: "pk",
   },
   {
-    country: "Bahrain",
-    address:
-      "Flat No. 11, Building 1694, Road 968, Block 909, East Riffa, Southern Governorate, Bahrain",
-    phone: "+973 3557 9427",
-    whatsapp: null,
-    flag: "bh",
-  },
-  {
     country: "United Kingdom",
-    address:
-      "71-75 Shelton Street, Covent Garden London WC2H 9JQ United Kingdom",
-    phone: "+44 7598 981921",
-    whatsapp: "https://wa.me/447598981921",
+    address: "150 S Stratford Rd, Winston-Salem, NC 27104, United States",
+    phone: "+44 7598 88887",
+    whatsapp: "https://wa.me/44759888887",
     flag: "uk",
   },
 ];
