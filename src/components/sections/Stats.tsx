@@ -73,9 +73,13 @@ function StatItem({
   );
 }
 
-export function Stats() {
+export function Stats({ variant = "home" }: { variant?: "home" | "about" }) {
   return (
-    <section className="bg-cream pt-0 lg:pt-70 xl:pt-15">
+    <section
+      className={`bg-cream ${
+        variant === "about" ? "py-12 lg:py-24" : "pt-0 lg:pt-70 xl:pt-15"
+      }`}
+    >
       <div className="container mx-auto grid max-w-7xl grid-cols-1 divide-y divide-gray-200 px-4 lg:grid-cols-5 lg:divide-x lg:divide-y-0 lg:px-8">
         {stats.map((stat) => (
           <StatItem

@@ -274,18 +274,18 @@ export const VIDEO_URL =
   "https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1776674123/Endpoint_Video_Compressed_jfvvui.mp4";
 
 export const footerQuickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "About Us", href: "#about" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Contact Us", href: "/#contact" },
 ];
 
 export const footerServiceLinks = [
-  { label: "UI/UX Design", href: "#services" },
-  { label: "Web & Mobile App", href: "#services" },
-  { label: "Dashboard", href: "#services" },
-  { label: "Ai & ML Development", href: "#services" },
-  { label: "Branding", href: "#services" },
+  { label: "UI/UX Design", href: "/services" },
+  { label: "Web & Mobile App", href: "/services" },
+  { label: "Dashboard", href: "/services" },
+  { label: "Ai & ML Development", href: "/services" },
+  { label: "Branding", href: "/services" },
 ];
 
 export const footerReviewLinks = [
@@ -357,8 +357,8 @@ export const footerSocialLinks = [
 ];
 
 export const desktopNavLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about-us" },
+  { label: "Services", href: "/services" },
+  { label: "Contact", href: "/#contact" },
 ];

@@ -7,7 +7,10 @@ export function Header() {
   const [onHero, setOnHero] = useState(true);
 
   useEffect(() => {
-    const hero = document.getElementById("home");
+    const hero =
+      document.getElementById("home") ??
+      document.getElementById("about-hero") ??
+      document.getElementById("services-hero");
     if (!hero) return;
     const observer = new IntersectionObserver(
       ([entry]) => setOnHero(entry.isIntersecting),

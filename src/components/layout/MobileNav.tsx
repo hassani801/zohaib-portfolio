@@ -47,10 +47,10 @@ function ProjectConeIcon() {
 }
 
 const mobileLinks = [
-  { label: "Home", href: "#home", icon: "home" },
-  { label: "About", href: "#about", icon: "about" },
-  { label: "Services", href: "#services", icon: "services" },
-  { label: "Contact", href: "#contact", icon: "contact" },
+  { label: "Home", href: "/", icon: "home" },
+  { label: "About", href: "/about-us", icon: "about" },
+  { label: "Services", href: "/services", icon: "services" },
+  { label: "Contact", href: "/#contact", icon: "contact" },
 ];
 
 export function MobileNav() {
@@ -83,7 +83,7 @@ export function MobileNav() {
         ))}
         <div className="relative">
           <Link
-            href="#contact"
+            href="/#contact"
             className="pointer-events-auto absolute -top-4 right-2 flex w-16.25 flex-col items-center gap-2 overflow-hidden rounded-[10px] text-2xl text-white"
           >
             <Image
@@ -120,7 +120,7 @@ export function MobileNav() {
         ))}
 
         <Link
-          href="#contact"
+          href="/#contact"
           className="flex cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl bg-[#4539D2] px-8 py-4 text-center text-lg text-white"
         >
           <ProjectConeIcon />

@@ -43,6 +43,7 @@ const config: Config = {
         "27": "6.75rem",
         "30": "7.5rem",
         "31": "7.75rem",
+        "33": "8.25rem",
         "43": "10.75rem",
         "85": "21.25rem",
         "70": "17.5rem",
@@ -57,8 +58,10 @@ const config: Config = {
         "112.5": "28.125rem",
       },
       height: {
+        "7.5": "1.875rem",
         "15": "3.75rem",
         "30": "7.5rem",
+        "45": "11.25rem",
         "85": "21.25rem",
       },
       minHeight: {
@@ -84,6 +87,10 @@ const config: Config = {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(14px)" },
         },
+        floatSoft: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-12px)" },
+        },
         marquee: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
@@ -105,6 +112,7 @@ const config: Config = {
       animation: {
         heroFloatUp: "heroFloatUp 3s ease-in-out infinite",
         heroFloatDown: "heroFloatDown 2.6s ease-in-out infinite",
+        floatSoft: "floatSoft 2.4s ease-in-out infinite",
         marquee: "marquee 25s linear infinite",
         buttonShine: "buttonShine 1.2s linear infinite",
         factFadeIn: "factFadeIn 0.8s ease-out forwards",
