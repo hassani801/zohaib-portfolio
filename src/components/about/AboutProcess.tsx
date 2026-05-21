@@ -21,7 +21,7 @@ export function AboutProcess() {
         </p>
       </div>
 
-      <div className="w-full max-w-[1120px] space-y-4 lg:space-y-8">
+      <div className="w-full max-w-[1120px] space-y-4 lg:space-y-8 mb-8">
         {aboutProcessSteps.map((item) => (
           <div
             key={item.title}
