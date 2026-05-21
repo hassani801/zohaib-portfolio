@@ -18,7 +18,9 @@ export function StartProjectButton({
 }: StartProjectButtonProps) {
   const inner = (
     <>
-      <span className="relative z-10 text-base md:text-xl">{children}</span>
+      <span className="relative z-10 text-base font-medium text-white md:text-xl">
+        {children}
+      </span>
       <span className="relative z-10 shrink-0 transition-transform duration-500 group-hover:rotate-45">
         <ArrowIcon />
       </span>
@@ -26,7 +28,7 @@ export function StartProjectButton({
     </>
   );
 
-  const classes = `group relative inline-flex cursor-pointer flex-row items-center justify-center gap-2 overflow-hidden rounded-xl bg-brand px-4 py-2.5 md:px-6 md:py-4 ${className}`;
+  const classes = `group relative inline-flex cursor-pointer flex-row items-center justify-center gap-2 overflow-hidden rounded-xl bg-brand px-4 py-2.5 text-white md:px-6 md:py-4 ${className}`;
 
   if (type === "submit") {
     return (
