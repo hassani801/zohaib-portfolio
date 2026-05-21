@@ -136,7 +136,7 @@ export function Footer() {
 
             <div className="w-full lg:w-auto">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="group relative flex w-full cursor-pointer flex-row items-center justify-center gap-2 overflow-hidden rounded-xl bg-brand px-4 py-2.5 md:px-6 md:py-4"
               >
                 <span className="relative z-10 text-base text-white md:text-xl">

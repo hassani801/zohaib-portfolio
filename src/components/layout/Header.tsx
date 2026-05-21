@@ -10,7 +10,8 @@ export function Header() {
     const hero =
       document.getElementById("home") ??
       document.getElementById("about-hero") ??
-      document.getElementById("services-hero");
+      document.getElementById("services-hero") ??
+      document.getElementById("contact-hero");
     if (!hero) return;
     const observer = new IntersectionObserver(
       ([entry]) => setOnHero(entry.isIntersecting),

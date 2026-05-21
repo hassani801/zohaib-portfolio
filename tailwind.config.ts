@@ -50,6 +50,7 @@ const config: Config = {
         "90": "22.5rem",
         "112.5": "28.125rem",
         "120": "30rem",
+        "140": "35rem",
         "151": "37.75rem",
         "200": "50rem",
       },
@@ -66,6 +67,7 @@ const config: Config = {
       },
       minHeight: {
         "120": "30rem",
+        "140": "35rem",
         "151": "37.75rem",
       },
       lineHeight: {
@@ -91,6 +93,10 @@ const config: Config = {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-12px)" },
         },
+        slowRotate: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
         marquee: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
@@ -113,6 +119,7 @@ const config: Config = {
         heroFloatUp: "heroFloatUp 3s ease-in-out infinite",
         heroFloatDown: "heroFloatDown 2.6s ease-in-out infinite",
         floatSoft: "floatSoft 2.4s ease-in-out infinite",
+        slowRotate: "slowRotate 35s linear infinite",
         marquee: "marquee 25s linear infinite",
         buttonShine: "buttonShine 1.2s linear infinite",
         factFadeIn: "factFadeIn 0.8s ease-out forwards",
