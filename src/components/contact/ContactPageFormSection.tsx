@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SITE_OWNER, SITE_OWNER_TITLE } from "@/data/branding";
 import { CONTACT_VIDEO_URL } from "@/data/site";
 import { ContactForm } from "./ContactForm";
 
@@ -36,17 +37,17 @@ export function ContactPageFormSection() {
                 <div className="flex items-center gap-4">
                   <Image
                     src="/images/backgrounds/ceo-contact.png"
-                    alt="Mohsin Irshad"
+                    alt={SITE_OWNER}
                     width={96}
                     height={96}
                     className="h-24 w-24 shrink-0 rounded-full object-cover"
                   />
                   <div>
                     <h3 className="text-xl font-semibold text-white">
-                      Mohsin Irshad
+                      {SITE_OWNER}
                     </h3>
                     <span className="text-sm font-normal text-white">
-                      CEO Endpointclients
+                      {SITE_OWNER_TITLE}
                     </span>
                   </div>
                 </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { CALENDLY_URL, SITE_OWNER, SITE_OWNER_TITLE } from "@/data/branding";
 import { CONTACT_VIDEO_URL } from "@/data/site";
 import { ContactForm } from "@/components/contact/ContactForm";
 
@@ -43,15 +44,15 @@ export function Contact() {
               <div className="flex items-center gap-4">
                 <Image
                   src="/images/backgrounds/ceo-contact.png"
-                  alt="Mohsin Irshad"
+                  alt={SITE_OWNER}
                   width={96}
                   height={96}
                   className="h-24 w-24 shrink-0 rounded-full object-cover"
                 />
                 <div>
-                  <h3 className="text-xl font-semibold text-white">Mohsin Irshad</h3>
+                  <h3 className="text-xl font-semibold text-white">{SITE_OWNER}</h3>
                   <span className="text-sm font-normal text-white">
-                    CEO Endpointclients
+                    {SITE_OWNER_TITLE}
                   </span>
                 </div>
               </div>
@@ -65,7 +66,7 @@ export function Contact() {
               <p className="mt-6 w-full text-sm text-white lg:text-right">
                 Not Interested to submit the form?{" "}
                 <Link
-                  href="https://calendly.com/endpointclients/30min"
+                  href={CALENDLY_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border-b border-white font-bold text-white hover:opacity-90"

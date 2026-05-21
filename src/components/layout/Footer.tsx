@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FOOTER_LOGO_SRC } from "@/data/branding";
 import {
   footerOffices,
   footerQuickLinks,
@@ -87,8 +88,8 @@ export function Footer() {
         <div className="flex flex-col items-center gap-4 md:items-start md:gap-10">
           <Link href="/">
             <Image
-              src="/assets/footer-logo.svg"
-              alt="logo epc"
+              src={FOOTER_LOGO_SRC}
+              alt="Portfolio logo"
               width={1216}
               height={339}
               className="h-30 w-auto md:h-85"
@@ -234,7 +235,7 @@ export function Footer() {
 
         <div className="flex flex-col-reverse items-center justify-between gap-4 px-8 md:flex-row md:gap-0">
           <p className="text-center text-base font-normal text-white md:text-start">
-            © {new Date().getFullYear()} Endpoint Clients | All Rights Reserved.
+            © {new Date().getFullYear()} Portfolio | All Rights Reserved.
           </p>
           <div className="flex flex-row justify-center gap-4.25 md:justify-start">
             {footerSocialLinks.map((social) => (

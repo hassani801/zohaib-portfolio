@@ -1,6 +1,6 @@
-# Endpoint Clients — Exact Clone
+# Portfolio — Design Agency Site
 
-A pixel-faithful Next.js recreation of [endpointclients.com](https://www.endpointclients.com/), using the same assets, colors, typography, and section structure.
+A Next.js design agency site built from a reference layout, branded as **Portfolio** with **Zohaib** as CEO.
 
 ## Run locally
 

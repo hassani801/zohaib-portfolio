@@ -26,7 +26,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Endpoint Clients - Leading Global UI UX Design Agency",
+  title: "Portfolio - Leading Global UI UX Design Agency",
   description:
     "Leading global UI/UX design agency. We design solutions that perform.",
 };

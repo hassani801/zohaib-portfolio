@@ -58,4 +58,4 @@ export const aboutIndustryImages = [
   },
 ];
 
-export const CALENDLY_URL = "https://calendly.com/endpointclients/30min";
+export { CALENDLY_URL } from "@/data/branding";

@@ -9,7 +9,7 @@ import { Testimonials } from "@/components/sections/Testimonials";
 import { AboutBookCall } from "@/components/about/AboutBookCall";
 
 export const metadata: Metadata = {
-  title: "About Endpoint Clients - A Trusted Global Design Agency",
+  title: "About Portfolio - A Trusted Global Design Agency",
   description:
     "A design studio built on innovation. Global design and development studio for products that grow.",
 };

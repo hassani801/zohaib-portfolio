@@ -219,7 +219,7 @@ export const CONTACT_VIDEO_URL =
 export const testimonials = [
   {
     quote:
-      "EndPoint is one of the most helpful website/mobile app design companies I worked with. A great team with fresh ideas, fair pricing, amazing designs and innovative thinking. Most of all very responsive, when working with Endpoint it is like having a second team on your side.",
+      "Portfolio is one of the most helpful website/mobile app design companies I worked with. A great team with fresh ideas, fair pricing, amazing designs and innovative thinking. Most of all very responsive, when working with Portfolio it is like having a second team on your side.",
     name: "Darrell Fertakos",
     role: "Award Winning Inventor BoundlessInnovations",
     image: "/images/Darell.png",
@@ -233,21 +233,21 @@ export const testimonials = [
   },
   {
     quote:
-      "EndPointClients has exceptional UI and UX team. They worked with us on multiple projects and always delivered high quality designs, and ensures that his ideas of design and user experience fulfills the customer needs. I would highly recommend them.",
+      "Portfolio has an exceptional UI and UX team. They worked with us on multiple projects and always delivered high quality designs, and ensures that his ideas of design and user experience fulfills the customer needs. I would highly recommend them.",
     name: "Farrukh Mian",
     role: "Partner - Techandover Ltd",
     image: "/images/Farukh.png",
   },
   {
     quote:
-      "EndPointClients is one of the most helpful website/mobile app design companies I worked with. A great team with fresh ideas, fair pricing, amazing designs and innovative thinking. Most of all very responsive, when working with Endpoint it is like having a second team on your side.",
+      "Portfolio is one of the most helpful website/mobile app design companies I worked with. A great team with fresh ideas, fair pricing, amazing designs and innovative thinking. Most of all very responsive, when working with Portfolio it is like having a second team on your side.",
     name: "James JR",
     role: "Confidential - New York",
     image: "/images/James.png",
   },
   {
     quote:
-      "It has been outstanding working with the team at EndPoint. The exception eye to detail and greater understanding has made our products exceptionally great.",
+      "It has been outstanding working with the team at Portfolio. The exception eye to detail and greater understanding has made our products exceptionally great.",
     name: "Muhunthan",
     role: "Founder / Architect - Duo World Inc.",
     image: "/images/Muhun.png",

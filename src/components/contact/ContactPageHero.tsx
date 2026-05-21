@@ -10,7 +10,7 @@ export function ContactPageHero() {
         <div className="flex flex-col items-center gap-4">
           <Image
             src="/assets/CompanyLogo.svg"
-            alt="Logo"
+            alt="Portfolio logo"
             width={172}
             height={48}
             className="h-12 w-43"

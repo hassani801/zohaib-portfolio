@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { CALENDLY_URL, LOGO_SRC, SITE_NAME } from "@/data/branding";
 import { heroPlatformIcons } from "@/data/site";
 import { HeroRotatingPill } from "@/components/hero/HeroRotatingPill";
 import { HeroBrandMarquee } from "@/components/hero/HeroBrandMarquee";
@@ -17,9 +18,9 @@ export function Hero() {
         <div className="container relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-7 px-4 md:gap-16 md:px-8">
           <div className="flex flex-col items-center gap-4">
             <Image
-              src="/assets/CompanyLogo.svg"
-              alt="Logo"
-              width={172}
+              src={LOGO_SRC}
+              alt={`${SITE_NAME} logo`}
+              width={200}
               height={48}
               className="h-12 w-43"
               priority
@@ -69,7 +70,7 @@ export function Hero() {
 
             <div className="flex flex-col gap-3 lg:flex-row lg:gap-6">
               <Link
-                href="https://calendly.com/endpointclients/30min"
+                href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex cursor-pointer items-center justify-center rounded-xl bg-white px-8 py-4"
