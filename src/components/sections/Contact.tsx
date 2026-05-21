@@ -10,7 +10,7 @@ export function Contact() {
   return (
     <section id="contact" className="bg-cream pt-8 lg:pt-16">
       <div className="container mx-auto max-w-7xl px-4 pb-6 lg:pb-24 xl:px-8 2xl:px-0">
-        <div className="relative flex min-h-0 w-full items-center overflow-hidden rounded-[20px] bg-neutral-900 lg:rounded-[56px]">
+        <div className="relative w-full overflow-hidden rounded-[20px] bg-neutral-900 lg:rounded-[56px]">
           <video
             autoPlay
             loop
@@ -22,8 +22,8 @@ export function Contact() {
             <source src={CONTACT_VIDEO_URL} type="video/mp4" />
           </video>
 
-          <div className="relative mx-auto grid w-full max-w-8xl grid-cols-1 gap-10 px-4 py-8 md:grid-cols-2 md:px-12 md:py-18 lg:gap-10 lg:py-0 lg:pl-12 lg:pr-10">
-            <div className="flex h-full flex-col justify-between gap-10">
+          <div className="relative mx-auto grid w-full max-w-8xl grid-cols-1 gap-10 px-5 py-10 sm:px-8 sm:py-12 md:grid-cols-2 md:gap-12 md:px-12 md:py-16 lg:gap-14 lg:px-14 lg:py-20 xl:px-16">
+            <div className="flex h-full min-h-0 flex-col justify-between gap-8 md:gap-10 lg:py-2">
               <div className="flex flex-col gap-4">
                 <h2 className="flex flex-col gap-3 text-4xl font-semibold leading-[112%] text-white lg:gap-4 lg:text-[50px]">
                   <span>
@@ -58,12 +58,12 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="flex flex-col items-end justify-end">
-              <div className="w-full rounded-4xl bg-white p-4 lg:p-10">
+            <div className="flex w-full flex-col gap-6 lg:justify-center">
+              <div className="w-full rounded-4xl bg-white p-6 sm:p-8 lg:p-10">
                 <ContactForm variant="home" />
               </div>
 
-              <p className="mt-6 w-full text-sm text-white lg:text-right">
+              <p className="w-full shrink-0 px-1 text-sm text-white lg:text-right">
                 Not Interested to submit the form?{" "}
                 <Link
                   href={CALENDLY_URL}
