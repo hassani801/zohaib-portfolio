@@ -25,18 +25,6 @@ export const heroPlatformIcons = [
     alt: "Upwork",
   },
   {
-    label: "Pro Seller Agency",
-    href: "https://pro.fiverr.com/freelancers/templateplanet",
-    image: "/assets/fiverr.svg",
-    alt: "Fiverr",
-  },
-  {
-    label: "Leading Design Agency",
-    href: "https://clutch.co/profile/endpoint-clients",
-    image: "/assets/clutch.svg",
-    alt: "Clutch",
-  },
-  {
     label: "Leading Design Agency",
     href: "https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency",
     image: "/assets/techbehemoths.svg",
@@ -134,7 +122,7 @@ export const industries = [
 export const valueProps = [
   "15+ Years of Experience",
   "1,200+ Projects Shipped",
-  "Top-Rated on Upwork & Fiverr",
+  "Top-Rated on Upwork",
   "Data-Informed Design",
   "Clean Interfaces",
   "Continuous Optimization",
@@ -207,7 +195,7 @@ export const stats = [
   {
     value: 500,
     suffix: "+",
-    label: "Top Rated Projects on Upwork & Fiverr",
+    label: "Top Rated Projects on Upwork",
     icon: "/assets/stats/stat-projects.png",
   },
   {
@@ -294,10 +282,6 @@ export const footerServiceLinks = [
 ];
 
 export const footerReviewLinks = [
-  {
-    label: "Clutch",
-    href: "https://clutch.co/profile/endpoint-clients",
-  },
   {
     label: "Techbehmoths",
     href: "https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency",

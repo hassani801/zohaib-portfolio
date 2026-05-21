@@ -118,7 +118,7 @@ export function Footer() {
                         width={40}
                         height={40}
                         className={`h-10 w-10 transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110 ${
-                          icon.alt === "Clutch" || icon.alt === "TechBehemoths"
+                          icon.alt === "TechBehemoths"
                             ? "rounded-full"
                             : ""
                         }`}

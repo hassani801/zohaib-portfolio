@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SITE_OWNER, SITE_OWNER_TITLE } from "@/data/branding";
+import { SITE_OWNER, SITE_OWNER_IMAGE, SITE_OWNER_TITLE } from "@/data/branding";
 import { CONTACT_VIDEO_URL } from "@/data/site";
 import { ContactForm } from "./ContactForm";
 
@@ -36,7 +36,7 @@ export function ContactPageFormSection() {
 
                 <div className="flex items-center gap-4">
                   <Image
-                    src="/images/backgrounds/ceo-contact.png"
+                    src={SITE_OWNER_IMAGE}
                     alt={SITE_OWNER}
                     width={96}
                     height={96}
