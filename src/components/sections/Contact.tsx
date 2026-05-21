@@ -8,7 +8,7 @@ import { ContactForm } from "@/components/contact/ContactForm";
 
 export function Contact() {
   return (
-    <section id="contact" className="bg-cream">
+    <section id="contact" className="bg-cream pt-8 lg:pt-16">
       <div className="container mx-auto max-w-7xl px-4 pb-6 lg:pb-24 xl:px-8 2xl:px-0">
         <div className="relative flex min-h-0 w-full items-center overflow-hidden rounded-[20px] bg-neutral-900 lg:rounded-[56px]">
           <video

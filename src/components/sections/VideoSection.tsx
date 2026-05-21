@@ -2,7 +2,7 @@ import { VIDEO_URL } from "@/data/site";
 
 export function VideoSection() {
   return (
-    <section className="overflow-x-hidden bg-cream">
+    <section className="overflow-x-hidden bg-cream pb-4 lg:pb-8">
       <div className="container mx-auto max-w-7xl transform-gpu px-0">
         <div className="overflow-hidden md:rounded-[2rem]">
           <video
