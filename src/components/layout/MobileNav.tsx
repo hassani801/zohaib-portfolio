@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { desktopNavLinks } from "@/data/site";
-import { CRTText } from "@/components/ui/CRTText";
 
 function NavIcon({ type }: { type: string }) {
   if (type === "services") {
@@ -115,16 +114,16 @@ export function MobileNav() {
             href={link.href}
             className="group flex h-15 min-w-31 max-w-31 cursor-pointer items-center justify-center rounded-xl border border-[#E5E7EB] bg-white py-4 text-center text-lg font-medium text-black hover:bg-[#F3F4F6]"
           >
-            <CRTText text={link.label} className="text-black text-lg" />
+            {link.label}
           </Link>
         ))}
 
         <Link
           href="/contact"
-          className="flex cursor-pointer items-center justify-center gap-3 overflow-hidden rounded-xl bg-[#4539D2] px-8 py-4 text-center text-lg text-white"
+          className="flex cursor-pointer items-center justify-center gap-3 rounded-xl bg-[#4539D2] px-8 py-4 text-center text-lg font-medium text-white"
         >
           <ProjectConeIcon />
-          <CRTText text="Start A Project" className="text-white text-lg" />
+          Start A Project
         </Link>
 
         {desktopNavLinks.slice(2).map((link) => (
@@ -133,7 +132,7 @@ export function MobileNav() {
             href={link.href}
             className="group flex h-15 min-w-31 max-w-31 cursor-pointer items-center justify-center rounded-xl border border-[#E5E7EB] bg-white py-4 text-center text-lg font-medium text-black hover:bg-[#F3F4F6]"
           >
-            <CRTText text={link.label} className="text-black text-lg" />
+            {link.label}
           </Link>
         ))}
       </div>
