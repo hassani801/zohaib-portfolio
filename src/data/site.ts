@@ -263,7 +263,7 @@ export const formServices = [
 
 export const formBudgets = ["$1k - $5k", "$5k - $10k", "$10k - $25k", "$25k+"];
 
-//export const VIDEO_URL = "https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1776674123/Endpoint_Video_Compressed_jfvvui.mp4";
+export const VIDEO_URL = "https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1776674123/Endpoint_Video_Compressed_jfvvui.mp4";
 
 export const footerQuickLinks = [
   { label: "Home", href: "/" },

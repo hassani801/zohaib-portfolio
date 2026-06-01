@@ -16,7 +16,7 @@ export default function Home() {
       <Services />
       <Stats />
       <Testimonials />
-      <VideoSection />
+      {/* <VideoSection /> */}
       <Contact />
     </main>
   );
