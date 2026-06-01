@@ -20,13 +20,13 @@ export const heroPillPhrases = [
 export const heroPlatformIcons = [
   {
     label: "Top Rated Plus",
-    href: "https://www.upwork.com",
+    href: "https://www.upwork.com/freelancers/~015b0094800c699495",
     image: "/assets/upwork.svg",
     alt: "Upwork",
   },
   {
     label: "Leading Design Agency",
-    href: "https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency",
+   // href: "https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency",
     image: "/assets/techbehemoths.svg",
     alt: "TechBehemoths",
   },
@@ -264,7 +264,7 @@ export const formServices = [
 export const formBudgets = ["$1k - $5k", "$5k - $10k", "$10k - $25k", "$25k+"];
 
 export const VIDEO_URL =
-  "https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1776674123/Endpoint_Video_Compressed_jfvvui.mp4";
+  //"https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1776674123/Endpoint_Video_Compressed_jfvvui.mp4";
 
 export const footerQuickLinks = [
   { label: "Home", href: "/" },
@@ -282,23 +282,23 @@ export const footerServiceLinks = [
 ];
 
 export const footerReviewLinks = [
-  {
-    label: "Techbehmoths",
-    href: "https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency",
-  },
-  {
-    label: "Techreviewer",
-    href: "https://techreviewer.co/companies/endpoint-clients-ltd",
-  },
-  { label: "Designrush", href: "https://www.designrush.com/" },
-  {
-    label: "Goodfirms",
-    href: "https://www.goodfirms.co/company/endpoint-clients-ltd",
-  },
-  {
-    label: "Trustpilot",
-    href: "https://www.trustpilot.com/review/endpointclients.com",
-  },
+  // {
+  //   label: "Techbehmoths",
+  //   href: "https://techbehemoths.com/company/endpoint-clients-ui-ux-design-agency",
+  // },
+  // {
+  //   label: "Techreviewer",
+  //   href: "https://techreviewer.co/companies/endpoint-clients-ltd",
+  // },
+  // { label: "Designrush", href: "https://www.designrush.com/" },
+  // {
+  //   label: "Goodfirms",
+  //   href: "https://www.goodfirms.co/company/endpoint-clients-ltd",
+  // },
+  // {
+  //   label: "Trustpilot",
+  //   href: "https://www.trustpilot.com/review/endpointclients.com",
+  // },
 ];
 
 export const footerOffices = [
@@ -320,21 +320,21 @@ export const footerOffices = [
 ];
 
 export const footerSocialLinks = [
-  {
-    label: "Facebook",
-    href: "https://www.facebook.com/endpointclients",
-    icon: "facebook",
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/endpointclients/",
-    icon: "instagram",
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/company/endpoint-clients/",
-    icon: "linkedin",
-  },
+  // {
+  //   label: "Facebook",
+  //   href: "https://www.facebook.com/endpointclients",
+  //   icon: "facebook",
+  // },
+  // {
+  //   label: "Instagram",
+  //   href: "https://www.instagram.com/endpointclients/",
+  //   icon: "instagram",
+  // },
+  // {
+  //   label: "LinkedIn",
+  //   href: "https://www.linkedin.com/company/endpoint-clients/",
+  //   icon: "linkedin",
+  // },
 ];
 
 export const desktopNavLinks = [
