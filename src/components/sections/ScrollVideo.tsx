@@ -52,7 +52,7 @@ export default function ScrollVideo() {
               loop
               playsInline
             >
-              <source src="/images/brands/video.mp4" type="video/mp4" />
+              <source src="https://drive.google.com/file/d/1dz_raIdB4m2tcOqBgO1VC_Fd-REqA2aR/view?usp=drive_link" type="video/mp4" />
             </video>
           </motion.div>
         </div>
