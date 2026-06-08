@@ -321,7 +321,7 @@ export const footerSocialLinks = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/zohaib-ali-94274625b/",
     icon: "linkedin",
   },
 ];

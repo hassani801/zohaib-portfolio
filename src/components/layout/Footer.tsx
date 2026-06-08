@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FOOTER_LOGO_SRC } from "@/data/branding";
@@ -41,9 +42,19 @@ function OfficeFlag({ flag }: { flag: string }) {
   );
 }
 
-function SocialIcon({ type }: { type: string }) {
+function SocialIcon({
+  type,
+  href,
+  label,
+}: {
+  type: string;
+  href: string;
+  label: string;
+}) {
+  let icon: ReactNode;
+
   if (type === "facebook") {
-    return (
+    icon = (
       <svg width="21" height="21" viewBox="0 0 21 21" fill="none" aria-hidden>
         <path
           d="M20.409 10.2045C20.409 15.4525 16.473 19.753 11.4436 20.3361V12.4641H13.849L14.2134 9.69428H11.5165V8.01782C11.5165 7.21604 11.7352 6.70582 12.9014 6.70582H14.3592V4.15469C13.6303 4.0818 12.9743 4.0818 12.2454 4.0818C10.1316 4.0818 8.67383 5.39381 8.67383 7.72627V9.76717H6.26848V12.537H8.67383V20.3361C3.71735 19.5343 0 15.3068 0 10.2045C0 4.59203 4.59203 0 10.2045 0C15.817 0 20.409 4.59203 20.409 10.2045Z"
@@ -51,9 +62,8 @@ function SocialIcon({ type }: { type: string }) {
         />
       </svg>
     );
-  }
-  if (type === "instagram") {
-    return (
+  } else if (type === "instagram") {
+    icon = (
       <svg width="21" height="21" viewBox="0 0 21 21" fill="none" aria-hidden>
         <path
           d="M10.1856 4.95313C9.49941 4.95301 8.81991 5.08809 8.18593 5.35063C7.55195 5.61317 6.97591 5.99804 6.4907 6.48325C6.00549 6.96846 5.62062 7.54451 5.35808 8.17849C5.09553 8.81247 4.96046 9.49196 4.96057 10.1782C4.96046 10.8644 5.09553 11.5439 5.35808 12.1779C5.62062 12.8118 6.00549 13.3879 6.4907 13.8731C6.97591 14.3583 7.55195 14.7432 8.18593 15.0057C8.81991 15.2683 9.49941 15.4034 10.1856 15.4033C10.8718 15.4034 11.5513 15.2683 12.1853 15.0057C12.8193 14.7432 13.3953 14.3583 13.8805 13.8731C14.3657 13.3879 14.7506 12.8118 15.0131 12.1779C15.2757 11.5439 15.4107 10.8644 15.4106 10.1782C15.4107 9.49196 15.2757 8.81247 15.0131 8.17849C14.7506 7.54451 14.3657 6.96846 13.8805 6.48325C13.3953 5.99804 12.8193 5.61317 12.1853 5.35063C11.5513 5.08809 10.8718 4.95301 10.1856 4.95313ZM10.1856 13.3769C8.55615 13.3769 7.23682 12.0576 7.23682 10.4281C7.23682 8.79865 8.55615 7.47932 10.1856 7.47932C11.815 7.47932 13.1343 8.79865 13.1343 10.4281C13.1343 12.0576 11.815 13.3769 10.1856 13.3769ZM16.503 5.14434C16.503 5.70082 16.0519 6.15193 15.4954 6.15193C14.9389 6.15193 14.4878 5.70082 14.4878 5.14434C14.4878 4.58786 14.9389 4.13675 15.4954 4.13675C16.0519 4.13675 16.503 4.58786 16.503 5.14434ZM19.2676 6.15193C19.3405 7.4502 19.3405 12.9061 19.2676 14.2044C19.1947 15.5027 18.9599 16.6553 18.1406 17.5476C17.3213 18.4399 16.1687 18.6747 14.8704 18.7476C13.5721 18.8205 8.11621 18.8205 6.81794 18.7476C5.51967 18.6747 4.36707 18.4399 3.47476 17.5476C2.58245 16.6553 2.34766 15.5027 2.27476 14.2044C2.20186 12.9061 2.20186 7.4502 2.27476 6.15193C2.34766 4.85366 2.58245 3.70106 3.47476 2.80875C4.36707 1.91644 5.51967 1.68165 6.81794 1.60875C8.11621 1.53585 13.5721 1.53585 14.8704 1.60875C16.1687 1.68165 17.3213 1.91644 18.1406 2.80875C18.9599 3.70106 19.1947 4.85366 19.2676 6.15193Z"
@@ -61,22 +71,28 @@ function SocialIcon({ type }: { type: string }) {
         />
       </svg>
     );
+  } else {
+    icon = (
+      <Image
+        src="/images/icons/Vector (1).png"
+        alt=""
+        width={21}
+        height={21}
+        className="h-[21px] w-[21px] object-contain"
+      />
+    );
   }
+
   return (
-    <div className="relative">
-     <Link
-    href="https://www.linkedin.com/in/zohaib-ali-94274625b/"
-    className="inline-flex items-center justify-center"
-  >
-    <Image
-      src="/images/icons/Vector (1).png"
-      alt="linkedin"
-      width={21}
-      height={21}
-      className="h-[21px] w-[21px] object-contain"
-    />
-  </Link>
-  </div>
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      className="flex h-8 w-8 items-center justify-center"
+    >
+      {icon}
+    </a>
   );
 }
 
@@ -208,16 +224,12 @@ export function Footer() {
           </p>
           <div className="flex flex-row justify-center gap-4.25 md:justify-start">
             {footerSocialLinks.map((social) => (
-              <a
+              <SocialIcon
                 key={social.label}
+                type={social.icon}
                 href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={social.label}
-                className="flex h-8 w-8 items-center justify-center"
-              >
-                <SocialIcon type={social.icon} />
-              </a>
+                label={social.label}
+              />
             ))}
           </div>
         </div>

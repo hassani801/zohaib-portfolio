@@ -2,7 +2,6 @@
 
 import { useRef, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { VIDEO_URL } from "@/data/site";
 
 export default function ScrollVideo() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -53,7 +52,7 @@ export default function ScrollVideo() {
               loop
               playsInline
             >
-              <source src={VIDEO_URL} type="video/mp4" />
+              <source src="https://youtu.be/sm8wDuN5EZo" type="video/mp4" />
             </video>
           </motion.div>
         </div>

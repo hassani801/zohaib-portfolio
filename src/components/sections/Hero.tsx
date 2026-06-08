@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { CALENDLY_URL, LOGO_SRC, SITE_NAME } from "@/data/branding";
+import { CALENDLY_URL } from "@/data/branding";
 import { heroPlatformIcons } from "@/data/site";
 import { HeroRotatingPill } from "@/components/hero/HeroRotatingPill";
 import { HeroBrandMarquee } from "@/components/hero/HeroBrandMarquee";
