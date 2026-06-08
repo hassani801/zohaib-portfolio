@@ -36,15 +36,15 @@ function NavIcon({ type }: { type: string }) {
 
 function ProjectConeIcon() {
   return (
-    <svg width="19" height="28" viewBox="0 0 19 28" fill="none" aria-hidden>
-      <path
-        d="M10.7754 4.88379C13.2327 4.88389 15.2684 6.8635 15.2686 9.30762C15.2686 9.41383 15.2658 9.5166 15.2578 9.62207H6.46973C5.24993 9.62208 4.54785 10.5103 4.54785 11.7285C4.5481 12.9428 6.11 14.0254 7.33008 14.0254L13.1152 14.0752C15.222 14.1716 17.1357 16.4197 17.1357 18.833C17.1357 18.8442 17.1358 18.849 17.1357 18.8545H4.6416C3.44666 18.8545 2.6339 19.8109 2.63379 21.0137C2.63379 22.2166 4.46409 23.3113 5.65918 23.3115H14.3564C16.7352 23.6212 18.6679 25.483 18.668 27.9277C18.668 27.95 18.667 27.9779 18.667 28H0.000976562C0.00097455 27.9779 0 27.95 0 27.9277C3.62577e-05 26.4377 0.628295 25.1144 1.72461 24.332C2.65268 23.6661 2.82516 23.2612 2.8252 22.8281C2.8252 22.0905 2.4264 21.8751 2.10547 21.3311C1.68426 20.6183 1.43463 19.7603 1.43457 18.833C1.43457 17.1759 2.26274 15.7856 3.39941 14.957C4.01837 14.5088 4.0745 14.4394 4.35645 14.166C4.85187 13.683 4.74898 12.9821 4.49414 12.6904C3.78318 11.879 3.35156 10.7384 3.35156 9.30762C3.35173 6.86354 5.4856 4.88395 7.93945 4.88379H10.7754ZM9.33496 0C10.047 0.000247351 10.6269 0.579873 10.627 1.29297C10.627 2.00514 10.0471 2.58569 9.33496 2.58594C8.62189 2.58594 8.04102 2.00529 8.04102 1.29297C8.04109 0.579721 8.62194 0 9.33496 0Z"
-        fill="white"
-      />
-    </svg>
+    <Image
+      src="/images/icons/Group 6.png"
+      alt="Project Icon"
+      width={25}
+      height={25}
+       className=" object-contain"
+    />
   );
 }
-
 const mobileLinks = [
   { label: "Home", href: "/", icon: "home" },
   { label: "About", href: "/about-us", icon: "about" },
@@ -64,9 +64,8 @@ export function MobileNav() {
 
   return (
     <div
-      className={`fixed bottom-0 left-1/2 z-[1000] flex w-full -translate-x-1/2 items-center justify-center transition-all duration-500 lg:pb-5 pointer-events-none ${
-        visible ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
-      }`}
+      className={`fixed bottom-0 left-1/2 z-[1000] flex w-full -translate-x-1/2 items-center justify-center transition-all duration-500 lg:pb-5 pointer-events-none ${visible ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+        }`}
     >
       {/* Mobile — 5 columns, black bar */}
       <div className="grid w-full grid-cols-5 gap-0 rounded-t-xl bg-black lg:hidden">
@@ -83,14 +82,14 @@ export function MobileNav() {
         <div className="relative">
           <Link
             href="/contact"
-            className="pointer-events-auto absolute -top-4 right-2 flex w-16.25 flex-col items-center gap-2 overflow-hidden rounded-[10px] text-2xl text-white"
+            className="pointer-events-auto absolute -top-4 right-2 flex w-24 flex-col items-center gap-2 overflow-hidden rounded-[10px] text-2xl text-white"
           >
             <Image
-              src="/assets/projectIcon.png"
+              src="/images/icons/Group 6.png"
               alt="projectIcon"
-              width={65}
-              height={65}
-              className="w-full rounded-[10px]"
+              width={26}
+              height={26}
+              className="h-auto w-full object-contain"
             />
           </Link>
         </div>

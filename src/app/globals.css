@@ -55,11 +55,14 @@ body {
   overflow: hidden;
   line-height: 1.2em;
 }
-
 .crt-stack {
   display: flex;
   flex-direction: column;
-  animation: crtTick 4s ease-in-out infinite;
+  animation: crtTick 0.8s ease-in-out;
+  animation-delay: calc(var(--i, 0) * 0.08s);
+}
+.crt-play .crt-stack {
+  animation: crtTick 0.8s ease-in-out;
   animation-delay: calc(var(--i, 0) * 0.08s);
 }
 

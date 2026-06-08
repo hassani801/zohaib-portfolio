@@ -2,6 +2,7 @@ import { valueProps } from "@/data/site";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import { StartProjectButton } from "@/components/ui/StartProjectButton";
 import { CheckStarIcon } from "@/components/ui/icons";
+import ScrollVideo from "./ScrollVideo";
 
 export function ValueSection() {
   return (
@@ -45,6 +46,7 @@ export function ValueSection() {
           </div>
         </div>
       </section>
+      <ScrollVideo/>
     </section>
   );
 }

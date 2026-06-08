@@ -8,14 +8,33 @@ export function ContactPageHero() {
     >
       <div className="container mx-auto flex max-w-7xl flex-col items-center gap-7 px-4 md:gap-16 md:px-8">
         <div className="flex flex-col items-center gap-4">
-          <Image
-            src="/assets/CompanyLogo.svg"
-            alt="Portfolio logo"
-            width={172}
-            height={48}
-            className="h-12 w-43"
-            priority
-          />
+          <div className="flex items-center gap-4 lg:gap-5">
+
+            {/* LOGO: Scaled to match the height of the three-line stacked text */}
+            <img
+              src="/images/icons/Frame 4.jpg"
+              alt="Muhammad Zohaib Ali Logo"
+              className="h-12 w-auto shrink-0 object-contain lg:h-15 rounded-xl"
+            />
+
+            {/* TEXT CONTAINER: Stacks the name and role vertically */}
+            <div className="flex flex-col text-left">
+
+              {/* Name split into two lines exactly like the image */}
+              <h1 className="font-sans text-xl font-bold leading-[1.1] text-white lg:text-2xl lg:leading-[1.1]">
+                Muhammad
+                <br />
+                Zohaib Ali
+              </h1>
+
+              {/* Subtitle / Role */}
+              <p className="mt-1 text-[11px] font-normal tracking-wide text-neutral-400 lg:mt-2 lg:text-sm">
+                UI/UX Designer
+              </p>
+
+            </div>
+
+          </div>
         </div>
 
         <div className="flex flex-col items-center gap-3 text-center">

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BookCallButton } from "@/components/ui/BookCallButton";
+import ScrollVideo from "../sections/ScrollVideo";
 function WhiteDiamondIcon() {
   return (
     <svg width="11" height="12" viewBox="0 0 11 12" fill="none" aria-hidden>
@@ -13,6 +14,7 @@ function WhiteDiamondIcon() {
 
 export function AboutIndustries() {
   return (
+    <div>
     <section className="group/section w-full bg-black bg-[url('/img/illustrations/industry.png')] bg-top bg-no-repeat px-4 py-8 lg:py-24 xl:px-8 2xl:px-0">
       <div className="container relative mx-auto max-w-7xl overflow-hidden">
         <div className="mb-5 lg:mb-12">
@@ -76,5 +78,7 @@ export function AboutIndustries() {
         </div>
       </div>
     </section>
+         <ScrollVideo />
+    </div>
   );
 }

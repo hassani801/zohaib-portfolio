@@ -10,10 +10,46 @@ type ContactFormProps = {
 
 export function ContactForm({ variant = "page" }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setErrorMessage("");
+
+    // Automatically read all input values using native FormData
+    const formData = new FormData(e.currentTarget);
+    const formValues = Object.fromEntries(formData.entries());
+
+    const payload = {
+      ...formValues,
+      access_key: "f3dddb5c-9024-42e0-a7eb-47cafc699f9c",
+      subject: `New Lead from ${formValues.fullName || "Inquiry Form"}`,
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        throw new Error(result.message || "Failed to submit. Please try again.");
+      }
+    } catch (err: any) {
+      setErrorMessage(err.message || "An unexpected error occurred. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -48,12 +84,20 @@ export function ContactForm({ variant = "page" }: ContactFormProps) {
           placeholder="Select Your Service"
           required
         />
+        {/* New Currency Selection */}
         <FormSelect
-          label="Project budget*"
-          name="projectBudget"
-          options={formBudgets}
-          placeholder="Select Your Range"
+          label="Currency*"
+          name="budgetCurrency"
+          options={["USD ($)", "PKR (Rs.)"]}
+          placeholder="Select Currency"
           required
+        />
+        {/* New Custom Budget Input */}
+        <FormField
+          label="Custom budget"
+          name="customBudget"
+          type="number"
+          placeholder="Ex. 5000"
         />
       </div>
       <div className="group">
@@ -76,15 +120,25 @@ export function ContactForm({ variant = "page" }: ContactFormProps) {
           className="w-full resize-none border-b-2 border-black bg-transparent py-2 text-base font-normal text-black outline-none placeholder:text-[#6e6e6e] transition-colors duration-300 focus:ring-0 group-hover:border-brand"
         />
       </div>
+
       {variant === "page" ? (
         <button
           type="submit"
+          disabled={loading}
           className="w-full cursor-pointer rounded-full bg-[#05080d] px-8 py-3 text-xl font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
         >
-          Send inquiry
+          {loading ? "Sending..." : "Send inquiry"}
         </button>
       ) : (
-        <StartProjectButton type="submit">Send inquiry</StartProjectButton>
+        <StartProjectButton type="submit" disabled={loading}>
+          {loading ? "Sending..." : "Send inquiry"}
+        </StartProjectButton>
+      )}
+
+      {errorMessage && (
+        <p className="mt-4 text-center text-sm font-semibold text-red-600 animate-pulse">
+          {errorMessage}
+        </p>
       )}
     </form>
   );

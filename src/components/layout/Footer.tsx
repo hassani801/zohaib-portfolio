@@ -63,12 +63,20 @@ function SocialIcon({ type }: { type: string }) {
     );
   }
   return (
-    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" aria-hidden>
-      <path
-        d="M16.503 16.1443H13.849V11.7285C13.849 10.5103 13.147 9.62208 11.9272 9.62208H10.1856V7.14434H11.9272C14.2596 7.14434 16.503 9.38774 16.503 11.7285V16.1443ZM4.6416 4.88379H10.1856C12.5273 4.88379 14.3564 6.71289 14.3564 9.05469V13.3769H4.6416V4.88379Z"
-        fill="#F5F5F5"
-      />
-    </svg>
+    <div className="relative">
+     <Link
+    href="https://www.linkedin.com/in/zohaib-ali-94274625b/"
+    className="inline-flex items-center justify-center"
+  >
+    <Image
+      src="/images/icons/Vector (1).png"
+      alt="linkedin"
+      width={21}
+      height={21}
+      className="h-[21px] w-[21px] object-contain"
+    />
+  </Link>
+  </div>
   );
 }
 
@@ -85,15 +93,33 @@ export function Footer() {
 
       <div className="container mx-auto flex max-w-330 flex-col gap-6 px-4 lg:gap-16 lg:px-8">
         <div className="flex flex-col items-center gap-4 md:items-start md:gap-10">
-          <Link href="/">
-            <Image
-              src={FOOTER_LOGO_SRC}
-              alt="Portfolio logo"
-              width={1216}
-              height={339}
-              className="h-30 w-auto md:h-85"
+          <div className="flex items-center gap-4 lg:gap-5">
+
+            {/* LOGO: Scaled to match the height of the three-line stacked text */}
+            <img
+              src="/images/icons/Frame 4.jpg"
+              alt="Muhammad Zohaib Ali Logo"
+              className="h-12 w-auto shrink-0 object-contain lg:h-15 rounded-xl"
             />
-          </Link>
+
+            {/* TEXT CONTAINER: Stacks the name and role vertically */}
+            <div className="flex flex-col text-left">
+
+              {/* Name split into two lines exactly like the image */}
+              <h1 className="font-sans text-xl font-bold leading-[1.1] text-white lg:text-2xl lg:leading-[1.1]">
+                Muhammad
+                <br />
+                Zohaib Ali
+              </h1>
+
+              {/* Subtitle / Role */}
+              <p className="mt-1 text-[11px] font-normal tracking-wide text-neutral-400 lg:mt-2 lg:text-sm">
+                UI/UX Designer
+              </p>
+
+            </div>
+
+          </div>
 
           <div className="flex w-full flex-col items-center justify-between gap-3 md:flex-row lg:gap-0">
             <div className="flex max-w-173.25 flex-col items-center gap-3 md:items-start">
@@ -116,11 +142,10 @@ export function Footer() {
                         alt={icon.alt}
                         width={40}
                         height={40}
-                        className={`h-10 w-10 transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110 ${
-                          icon.alt === "TechBehemoths"
+                        className={`h-10 w-10 transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:scale-110 ${icon.alt === "TechBehemoths"
                             ? "rounded-full"
                             : ""
-                        }`}
+                          }`}
                       />
                     </a>
                     <div className="pointer-events-none absolute bottom-[120%] left-1/2 z-20 mt-3 hidden -translate-x-1/2 opacity-0 transition-all duration-200 group-hover:opacity-100 md:block">
@@ -174,63 +199,8 @@ export function Footer() {
             </div>
           </div>
 
-          {/* <div className="flex flex-col gap-6 2xl:min-w-96.25">
-            <h4 className="text-[17px] font-semibold uppercase text-white">
-              Review
-            </h4>
-            <div className="flex flex-col gap-4">
-              {footerReviewLinks.map((link) => (
-                <FooterLink
-                  key={link.label}
-                  href={link.href}
-                  label={link.label}
-                  external
-                />
-              ))}
-            </div>
-          </div> */}
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
-          {footerOffices.map((office) => (
-            <div
-              key={office.country}
-              className="flex flex-col gap-5 rounded-4xl bg-black/50 p-7"
-            >
-              <div className="flex flex-row items-center gap-3">
-                <OfficeFlag flag={office.flag} />
-                <p className="text-2xl font-semibold text-white">{office.country}</p>
-              </div>
-              <div className="flex flex-col gap-3.5">
-                <div className="flex flex-row gap-2.5">
-                  <div className="shrink-0">
-                    <LocationPinIcon />
-                  </div>
-                  <p className="text-base font-normal text-gray-200">{office.address}</p>
-                </div>
-                {office.whatsapp ? (
-                  <a
-                    href={office.whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex cursor-pointer flex-row gap-2.5"
-                  >
-                    <Image
-                      src="/assets/whatsapp.svg"
-                      alt="whatsapp icon"
-                      width={20}
-                      height={20}
-                      className="h-5 w-5 shrink-0"
-                    />
-                    <p className="text-base font-normal text-gray-200">{office.phone}</p>
-                  </a>
-                ) : (
-                  <p className="text-base font-normal text-gray-200">{office.phone}</p>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
 
         <div className="flex flex-col-reverse items-center justify-between gap-4 px-8 md:flex-row md:gap-0">
           <p className="text-center text-base font-normal text-white md:text-start">

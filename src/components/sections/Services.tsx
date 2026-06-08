@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { services } from "@/data/site";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import { StartProjectButton } from "@/components/ui/StartProjectButton";
+import ScrollVideo from "./ScrollVideo";
 
 export function Services() {
   const [active, setActive] = useState(0);

@@ -20,7 +20,7 @@ export const heroPillPhrases = [
 export const heroPlatformIcons = [
   {
     label: "Top Rated Plus",
-    href: "https://www.upwork.com/",
+    href: "https://www.upwork.com/freelancers/~015b0094800c699495",
     image: "/assets/upwork.svg",
     alt: "Upwork",
   },
@@ -33,22 +33,13 @@ export const heroPlatformIcons = [
 ];
 
 export const partnerBrands = [
-  { src: "/images/brands/homesharea.png", alt: "Homesharea" },
-  { src: "/images/brands/bondheshams.png", alt: "Bondh e Shams" },
-  { src: "/images/brands/duoworld.png", alt: "DuoWorld" },
-  { src: "/images/brands/curryking.png", alt: "Curry King" },
-  { src: "/images/brands/bajcogroup.png", alt: "Bajco Group" },
-  { src: "/images/brands/capitalcareinvestment.png", alt: "Capital Care" },
-  { src: "/images/brands/citrusbits.png", alt: "CitrusBits" },
-  { src: "/images/brands/darerc.png", alt: "Darerc" },
-  { src: "/images/brands/frewert-media.png", alt: "Frewert Media" },
-  { src: "/images/brands/hyversa.png", alt: "Hyversa" },
-  { src: "/images/brands/japan-statioan.png", alt: "Japan Station" },
-  { src: "/images/brands/lmconsulting.png", alt: "LM Consulting" },
-  { src: "/images/brands/mahaana.png", alt: "Mahaana" },
-  { src: "/images/brands/misa.png", alt: "Misa" },
-  { src: "/images/brands/pasha.png", alt: "Pasha" },
-  { src: "/images/brands/azm.png", alt: "AZM" },
+  { src: "/images/icons/VOXR.png", alt: "VOXR" }, // From VOXR1 1.png
+  { src: "/images/brands/ringly.png", alt: "Ringly" }, // From Ringly 1.png
+  { src: "/images/brands/qubed.png", alt: "qubed" }, // From qubed 1.png
+  { src: "/images/brands/automateq.png", alt: "automateq." }, // From automateq1 1.png
+  { src: "/images/brands/innovista.png", alt: "Innovista" }, // From Innovista1 1.png
+  { src: "/images/icons/stackfuse1 2.png", alt: "Stackfuse" }, // From stackfuse1 1.png
+  { src: "/images/icons/Frame 5.png", alt: "Hoki" } // From Hoki1 1.png
 ];
 
 export const industries = [
@@ -120,8 +111,8 @@ export const industries = [
 ];
 
 export const valueProps = [
-  "15+ Years of Experience",
-  "1,200+ Projects Shipped",
+  "5+ Years of Experience",
+  "500+ Projects Shipped",
   "Top-Rated on Upwork",
   "Data-Informed Design",
   "Clean Interfaces",
@@ -174,26 +165,26 @@ export const services = [
 
 export const stats = [
   {
-    value: 350,
+    value: 150,
     suffix: "+",
     label: "Happy Clients Worldwide",
     icon: "/assets/stats/stat-clients.png",
   },
   {
-    value: 120,
+    value: 1,
     suffix: "M+",
     label: "Raised by our Clients",
     prefix: "$",
     icon: "/assets/stats/stat-raised.png",
   },
   {
-    value: 45,
+    value: 25,
     suffix: "+",
     label: "Countries Served",
     icon: "/assets/stats/stat-countries.png",
   },
   {
-    value: 500,
+    value: 250,
     suffix: "+",
     label: "Top Rated Projects on Upwork",
     icon: "/assets/stats/stat-projects.png",
@@ -209,51 +200,50 @@ export const stats = [
 export const CONTACT_VIDEO_URL =
   "https://res.cloudinary.com/dgbdcdqd1/video/upload/q_auto/f_auto/v1776247016/BG_21_ec7n75.mp4";
 
-export const testimonials = [
-  {
-    quote:
-      "Portfolio is one of the most helpful website/mobile app design companies I worked with. A great team with fresh ideas, fair pricing, amazing designs and innovative thinking. Most of all very responsive, when working with Portfolio it is like having a second team on your side.",
-    name: "Darrell Fertakos",
-    role: "Award Winning Inventor BoundlessInnovations",
-    image: "/images/Darell.png",
-  },
-  {
-    quote:
-      "Consistent, professional and well resourced. The guys are always available and the results are easy to see by the quality of the work.",
-    name: "Oliver scott",
-    role: "Director at Capital care investments",
-    image: "/images/Oliver.png",
-  },
-  {
-    quote:
-      "Portfolio has an exceptional UI and UX team. They worked with us on multiple projects and always delivered high quality designs, and ensures that his ideas of design and user experience fulfills the customer needs. I would highly recommend them.",
-    name: "Farrukh Mian",
-    role: "Partner - Techandover Ltd",
-    image: "/images/Farukh.png",
-  },
-  {
-    quote:
-      "Portfolio is one of the most helpful website/mobile app design companies I worked with. A great team with fresh ideas, fair pricing, amazing designs and innovative thinking. Most of all very responsive, when working with Portfolio it is like having a second team on your side.",
-    name: "James JR",
-    role: "Confidential - New York",
-    image: "/images/James.png",
-  },
-  {
-    quote:
-      "It has been outstanding working with the team at Portfolio. The exception eye to detail and greater understanding has made our products exceptionally great.",
-    name: "Muhunthan",
-    role: "Founder / Architect - Duo World Inc.",
-    image: "/images/Muhun.png",
-  },
-  {
-    quote:
-      "We are satisfied with their professional qualitative work. Especially he understand well about Japanese unique designs. He is the best Pakistani designer who can work for Japanese companies.",
-    name: "Ai Esashika",
-    role: "Ai Esashika",
-    image: "/images/Ai_Esa.png",
-  },
-];
-
+  export const testimonials = [
+    {
+      quote:
+        "Zohaib Ali is one of the most helpful website/mobile app design freelancers I worked with. A great professional with fresh ideas, fair pricing, amazing designs, and innovative thinking. Most of all, very responsive. Working with Zohaib Ali is like having a second team on your side.",
+      name: "Darrell Fertakos",
+      role: "Award Winning Inventor BoundlessInnovations",
+      image: "/images/Darell.png",
+    },
+    {
+      quote:
+        "Consistent, professional, and highly skilled. Zohaib Ali is always available, and the results are easy to see through the quality of the work delivered.",
+      name: "Oliver Scott",
+      role: "Director at Capital Care Investments",
+      image: "/images/Oliver.png",
+    },
+    {
+      quote:
+        "Zohaib Ali has exceptional UI and UX expertise. He worked with us on multiple projects and always delivered high-quality designs while ensuring that user experience and design ideas perfectly met customer needs. I would highly recommend him.",
+      name: "Farrukh Mian",
+      role: "Partner - Techandover Ltd",
+      image: "/images/Farukh.png",
+    },
+    {
+      quote:
+        "Zohaib Ali is one of the most helpful website/mobile app design freelancers I worked with. A great professional with fresh ideas, fair pricing, amazing designs, and innovative thinking. Most of all, very responsive. Working with Zohaib Ali is like having a second team on your side.",
+      name: "James JR",
+      role: "Confidential - New York",
+      image: "/images/James.png",
+    },
+    {
+      quote:
+        "It has been outstanding working with Zohaib Ali. His exceptional attention to detail and deep understanding of design have made our products exceptionally great.",
+      name: "Muhunthan",
+      role: "Founder / Architect - Duo World Inc.",
+      image: "/images/Muhun.png",
+    },
+    {
+      quote:
+        "We are satisfied with Zohaib Ali's professional and high-quality work. He understands Japanese design preferences very well and is an excellent freelance designer for companies looking for world-class design solutions.",
+      name: "Ai Esashika",
+      role: "Ai Esashika",
+      image: "/images/Ai_Esa.png",
+    },
+  ];
 export const formServices = [
   "UI/UX Design",
   "Web Design",
