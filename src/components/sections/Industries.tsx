@@ -4,8 +4,6 @@ import { useRef, useState, MouseEvent } from "react";
 import Image from "next/image";
 import { industries } from "@/data/site";
 import { SectionBadge } from "@/components/ui/SectionBadge";
-import ScrollVideo from "./ScrollVideo";
-
 // Helper component to handle cursor tracking without triggering main page re-renders
 interface HoverImageContainerProps {
   children: React.ReactNode;

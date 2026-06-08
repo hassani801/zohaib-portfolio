@@ -1,46 +1,14 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FOOTER_LOGO_SRC } from "@/data/branding";
 import {
-  footerOffices,
   footerQuickLinks,
-  footerReviewLinks,
   footerServiceLinks,
   footerSocialLinks,
   heroPlatformIcons,
 } from "@/data/site";
 import { FooterLink } from "@/components/ui/FooterLink";
 import { ArrowIcon } from "@/components/ui/icons";
-
-function LocationPinIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden>
-      <path
-        opacity="0.4"
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M10.0009 18.3337C10.5037 18.3337 10.9867 18.1445 11.3481 17.8061C11.6005 17.5698 11.8592 17.3313 12.121 17.0899C15.3008 14.158 18.9259 10.8156 16.93 6.15005C15.7605 3.41629 12.9532 1.66699 10.0009 1.66699C7.04862 1.66699 4.24136 3.41629 3.07189 6.15005C1.08411 10.7967 4.66917 14.1143 7.83173 17.041C8.11038 17.2989 8.38575 17.5537 8.65374 17.8061C9.01515 18.1445 9.49821 18.3337 10.0009 18.3337ZM10 12.0837C11.6108 12.0837 12.9167 10.7778 12.9167 9.16699C12.9167 7.55616 11.6108 6.25033 10 6.25033C8.38917 6.25033 7.08333 7.55616 7.08333 9.16699C7.08333 10.7778 8.38917 12.0837 10 12.0837Z"
-        fill="white"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M10.001 1.04199C6.81251 1.04199 3.77057 2.92785 2.49731 5.90423C1.31234 8.6742 1.95383 11.0314 3.28946 13.0499C4.3845 14.7049 5.98165 16.1818 7.42255 17.5143C7.69727 17.7684 7.96644 18.0173 8.22524 18.2611C8.70581 18.711 9.34232 18.9587 10.001 18.9587C10.6596 18.9587 11.2961 18.711 11.7753 18.2624C12.0199 18.0333 12.2735 17.7997 12.5322 17.5614C13.9888 16.2193 15.6084 14.727 16.7149 13.051C18.0489 11.0305 18.6881 8.67077 17.5046 5.90423C16.2314 2.92785 13.1894 1.04199 10.001 1.04199ZM3.64656 6.39587C4.71225 3.90473 7.28482 2.29199 10.001 2.29199C12.7171 2.29199 15.2897 3.90473 16.3554 6.39587C17.3321 8.679 16.8392 10.594 15.6717 12.3623C14.6571 13.8991 13.1708 15.2705 11.7098 16.6185C11.445 16.8628 11.1811 17.1063 10.921 17.3499C10.6774 17.578 10.3478 17.7087 10.001 17.7087C9.65444 17.7087 9.32507 17.5782 9.0815 17.3504C6.79846 15.2318 5.33572 13.8772 4.33191 12.3602C3.16327 10.594 2.66861 8.68194 3.64656 6.39587Z"
-        fill="white"
-      />
-    </svg>
-  );
-}
-
-function OfficeFlag({ flag }: { flag: string }) {
-  const emoji = flag === "pk" ? "🇵🇰" : "🇬🇧";
-  return (
-    <span className="flex h-7 w-7 shrink-0 items-center justify-center text-2xl leading-none">
-      {emoji}
-    </span>
-  );
-}
 
 function SocialIcon({
   type,
@@ -112,9 +80,11 @@ export function Footer() {
           <div className="flex items-center gap-4 lg:gap-5">
 
             {/* LOGO: Scaled to match the height of the three-line stacked text */}
-            <img
+            <Image
               src="/images/icons/Frame 4.jpg"
               alt="Muhammad Zohaib Ali Logo"
+              width={48}
+              height={48}
               className="h-12 w-auto shrink-0 object-contain lg:h-15 rounded-xl"
             />
 

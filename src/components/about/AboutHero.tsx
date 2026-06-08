@@ -156,9 +156,11 @@ export function AboutHero() {
             <div className="flex items-center gap-4 lg:gap-5">
 
               {/* LOGO: Scaled to match the height of the three-line stacked text */}
-              <img
+              <Image
                 src="/images/icons/Frame 4.jpg"
                 alt="Muhammad Zohaib Ali Logo"
+                width={48}
+                height={48}
                 className="h-12 w-auto shrink-0 object-contain lg:h-15 rounded-xl"
               />
 

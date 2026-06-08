@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { formBudgets, formServices } from "@/data/site";
+import { formServices } from "@/data/site";
 import { StartProjectButton } from "@/components/ui/StartProjectButton";
 
 type ContactFormProps = {
@@ -45,8 +45,12 @@ export function ContactForm({ variant = "page" }: ContactFormProps) {
       } else {
         throw new Error(result.message || "Failed to submit. Please try again.");
       }
-    } catch (err: any) {
-      setErrorMessage(err.message || "An unexpected error occurred. Please try again.");
+    } catch (err: unknown) {
+      setErrorMessage(
+        err instanceof Error
+          ? err.message
+          : "An unexpected error occurred. Please try again."
+      );
     } finally {
       setLoading(false);
     }

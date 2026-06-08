@@ -8,6 +8,7 @@ type StartProjectButtonProps = {
   type?: "button" | "submit";
   className?: string;
   children?: React.ReactNode;
+  disabled?: boolean;
 };
 
 export function StartProjectButton({
@@ -15,6 +16,7 @@ export function StartProjectButton({
   type = "button",
   className = "",
   children = "Start a Project",
+  disabled = false,
 }: StartProjectButtonProps) {
   const inner = (
     <>
@@ -32,7 +34,11 @@ export function StartProjectButton({
 
   if (type === "submit") {
     return (
-      <button type="submit" className={classes}>
+      <button
+        type="submit"
+        disabled={disabled}
+        className={`${classes} disabled:cursor-not-allowed disabled:opacity-60`}
+      >
         {inner}
       </button>
     );
