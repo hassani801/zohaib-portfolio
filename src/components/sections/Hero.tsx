@@ -87,9 +87,7 @@ export function Hero() {
 
             <div className="flex flex-col gap-3 lg:flex-row lg:gap-6">
               <Link
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/contact"
                 className="flex cursor-pointer items-center justify-center rounded-xl bg-white px-8 py-4"
               >
                 <span className="text-base font-medium text-gray-950">
