@@ -52,7 +52,7 @@ export default function ScrollVideo() {
               loop
               playsInline
             >
-            <source src="/202606010833 (1).zip" type="video/mp4" />
+            <source src="/" type="video/mp4" />
             </video>
           </motion.div>
         </div>
