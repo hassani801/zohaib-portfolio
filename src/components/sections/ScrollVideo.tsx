@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { VIDEO_URL } from "@/data/site";
 
 export default function ScrollVideo() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -16,19 +17,22 @@ export default function ScrollVideo() {
   const borderRadius = useTransform(scrollYProgress, [0, 1], [28, 0]);
 
   useEffect(() => {
+    const video = videoRef.current;
+    const section = sectionRef.current;
+    if (!video || !section) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (!videoRef.current) return;
         if (entry.isIntersecting) {
-          videoRef.current.play();
-        } else {
-          videoRef.current.pause();
+          void video.play().catch(() => {});
+        } else if (!video.paused) {
+          video.pause();
         }
       },
       { threshold: 0.3 }
     );
 
-    if (sectionRef.current) observer.observe(sectionRef.current);
+    observer.observe(section);
     return () => observer.disconnect();
   }, []);
 
@@ -47,10 +51,10 @@ export default function ScrollVideo() {
             <video
               ref={videoRef}
               className="h-full w-full object-cover"
-              autoPlay
               muted
               loop
               playsInline
+              preload="metadata"
             >
               <source src="https://youtu.be/sm8wDuN5EZo" type="video/mp4" />
             </video>
