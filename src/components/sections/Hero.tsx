@@ -9,6 +9,7 @@ import { HeroBrandMarquee } from "@/components/hero/HeroBrandMarquee";
 import { ArrowIcon, StarIcon } from "@/components/ui/icons";
 
 export function Hero() {
+  
   return (
     <section className="bg-cream">
       <div
