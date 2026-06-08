@@ -1,12 +1,11 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { VIDEO_URL } from "@/data/site";
 
 export default function ScrollVideo() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -15,26 +14,6 @@ export default function ScrollVideo() {
 
   const scale = useTransform(scrollYProgress, [0, 1], [0.62, 1]);
   const borderRadius = useTransform(scrollYProgress, [0, 1], [28, 0]);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    const section = sectionRef.current;
-    if (!video || !section) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          void video.play().catch(() => {});
-        } else if (!video.paused) {
-          video.pause();
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <section ref={sectionRef} className="relative h-[250vh] w-full">
@@ -49,14 +28,14 @@ export default function ScrollVideo() {
             }}
           >
             <video
-              ref={videoRef}
               className="h-full w-full object-cover"
+              autoPlay
               muted
               loop
               playsInline
-              preload="metadata"
+              preload="auto"
             >
-              <source src="https://youtu.be/sm8wDuN5EZo" type="video/mp4" />
+              <source src={VIDEO_URL} type="video/mp4" />
             </video>
           </motion.div>
         </div>
